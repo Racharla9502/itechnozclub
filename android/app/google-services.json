@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "693361099623",
+    "firebase_url": "https://itechnozclub-881fc-default-rtdb.firebaseio.com",
+    "project_id": "itechnozclub-881fc",
+    "storage_bucket": "itechnozclub-881fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693361099623:android:0ce31d54fe35d6ea4225c2",
+        "android_client_info": {
+          "package_name": "com.mycompany.itechnoz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz1sOWHsL7Plqbmpe-L90iAjz4R4HxzOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

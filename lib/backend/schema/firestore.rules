@@ -1,0 +1,636 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /pageview_home/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /events_page/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /Core_Team/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /Core_Team/{parent}/skills/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/skills/{document} {
+      allow read: if true;
+    }
+
+
+    match /Core_Team/{parent}/certificates/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/certificates/{document} {
+      allow read: if true;
+    }
+
+
+    match /Core_Team/{parent}/education/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/education/{document} {
+      allow read: if true;
+    }
+
+
+    match /Core_Team/{parent}/badges_and_rankings/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/badges_and_rankings/{document} {
+      allow read: if true;
+    }
+
+
+    match /Core_Team/{parent}/experience/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/experience/{document} {
+      allow read: if true;
+    }
+
+
+    match /Core_Team/{parent}/certificate_images/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/certificate_images/{document} {
+      allow read: if true;
+    }
+
+
+    match /Core_Team/{parent}/projects/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/projects/{document} {
+      allow read: if true;
+    }
+
+
+    match /Core_Team/{parent}/languages/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/languages/{document} {
+      allow read: if true;
+    }
+
+
+    match /Technical_Team/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /Technical_Team/{parent}/skills01/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/skills01/{document} {
+      allow read: if true;
+    }
+
+
+    match /Technical_Team/{parent}/certificates01/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/certificates01/{document} {
+      allow read: if true;
+    }
+
+
+    match /Technical_Team/{parent}/education01/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/education01/{document} {
+      allow read: if true;
+    }
+
+
+    match /Technical_Team/{parent}/badges_and_rankings01/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/badges_and_rankings01/{document} {
+      allow read: if true;
+    }
+
+
+    match /Technical_Team/{parent}/experience01/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/experience01/{document} {
+      allow read: if true;
+    }
+
+
+    match /Technical_Team/{parent}/certificate_images01/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/certificate_images01/{document} {
+      allow read: if true;
+    }
+
+
+    match /Technical_Team/{parent}/projects01/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/projects01/{document} {
+      allow read: if true;
+    }
+
+
+    match /Technical_Team/{parent}/languages01/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/languages01/{document} {
+      allow read: if true;
+    }
+
+
+    match /Design_Team/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /Design_Team/{parent}/skills02/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/skills02/{document} {
+      allow read: if true;
+    }
+
+
+    match /Design_Team/{parent}/certificates02/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/certificates02/{document} {
+      allow read: if true;
+    }
+
+
+    match /Design_Team/{parent}/education02/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/education02/{document} {
+      allow read: if true;
+    }
+
+
+    match /Design_Team/{parent}/badges_and_rankings02/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/badges_and_rankings02/{document} {
+      allow read: if true;
+    }
+
+
+    match /Design_Team/{parent}/experience02/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/experience02/{document} {
+      allow read: if true;
+    }
+
+
+    match /Design_Team/{parent}/certificate_images02/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/certificate_images02/{document} {
+      allow read: if true;
+    }
+
+
+    match /Design_Team/{parent}/projects02/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/projects02/{document} {
+      allow read: if true;
+    }
+
+
+    match /Design_Team/{parent}/languages02/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/languages02/{document} {
+      allow read: if true;
+    }
+
+
+    match /PublicRelation_Team/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /PublicRelation_Team/{parent}/skills03/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/skills03/{document} {
+      allow read: if true;
+    }
+
+
+    match /PublicRelation_Team/{parent}/certificates03/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/certificates03/{document} {
+      allow read: if true;
+    }
+
+
+    match /PublicRelation_Team/{parent}/education03/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/education03/{document} {
+      allow read: if true;
+    }
+
+
+    match /PublicRelation_Team/{parent}/badges_and_rankings03/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/badges_and_rankings03/{document} {
+      allow read: if true;
+    }
+
+
+    match /PublicRelation_Team/{parent}/experience03/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/experience03/{document} {
+      allow read: if true;
+    }
+
+
+    match /PublicRelation_Team/{parent}/certificate_images03/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/certificate_images03/{document} {
+      allow read: if true;
+    }
+
+
+    match /PublicRelation_Team/{parent}/projects03/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/projects03/{document} {
+      allow read: if true;
+    }
+
+
+    match /PublicRelation_Team/{parent}/languages03/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/languages03/{document} {
+      allow read: if true;
+    }
+
+
+    match /Photography_Team/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /Photography_Team/{parent}/skills04/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/skills04/{document} {
+      allow read: if true;
+    }
+
+
+    match /Photography_Team/{parent}/certificates04/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/certificates04/{document} {
+      allow read: if true;
+    }
+
+
+    match /Photography_Team/{parent}/education04/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/education04/{document} {
+      allow read: if true;
+    }
+
+
+    match /Photography_Team/{parent}/badges_and_rankings04/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/badges_and_rankings04/{document} {
+      allow read: if true;
+    }
+
+
+    match /Photography_Team/{parent}/experience04/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/experience04/{document} {
+      allow read: if true;
+    }
+
+
+    match /Photography_Team/{parent}/certificate_images04/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/certificate_images04/{document} {
+      allow read: if true;
+    }
+
+
+    match /Photography_Team/{parent}/projects04/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/projects04/{document} {
+      allow read: if true;
+    }
+
+
+    match /Photography_Team/{parent}/languages04/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/languages04/{document} {
+      allow read: if true;
+    }
+
+
+    match /Organizing_Team/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /Organizing_Team/{parent}/skills05/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/skills05/{document} {
+      allow read: if true;
+    }
+
+
+    match /Organizing_Team/{parent}/certificates05/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/certificates05/{document} {
+      allow read: if true;
+    }
+
+
+    match /Organizing_Team/{parent}/education05/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/education05/{document} {
+      allow read: if true;
+    }
+
+
+    match /Organizing_Team/{parent}/badges_and_rankings05/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/badges_and_rankings05/{document} {
+      allow read: if true;
+    }
+
+
+    match /Organizing_Team/{parent}/experience05/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/experience05/{document} {
+      allow read: if true;
+    }
+
+
+    match /Organizing_Team/{parent}/certificate_images05/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/certificate_images05/{document} {
+      allow read: if true;
+    }
+
+
+    match /Organizing_Team/{parent}/projects05/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/projects05/{document} {
+      allow read: if true;
+    }
+
+
+    match /Organizing_Team/{parent}/languages05/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/languages05/{document} {
+      allow read: if true;
+    }
+
+  }
+}
